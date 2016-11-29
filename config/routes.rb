@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :todos, only: [:index, :new, :create]
+  resources :todos, only: [:index, :new, :create, :destroy]
 end

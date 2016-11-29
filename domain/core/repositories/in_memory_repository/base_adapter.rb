@@ -2,12 +2,12 @@ module Core
   module InMemoryRepository
     class BaseAdapter
       def initialize
-        @records = []
+        @records = {}
         @id_counter = 1
       end
 
       def find_all
-        @records
+        @records.values
       end
     end
   end

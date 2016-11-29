@@ -3,6 +3,9 @@
 <%= link_to 'Add', new_todo_path %>
 <ul>
   <% @todos.each do |todo| %>
-    <li><%= todo.content %></li>
+    <li>
+      <span><%= todo.content %></span>
+      <span><%= link_to "delete", todo_path(todo.id), method: :delete %></span>
+    </li>
   <% end %>
 </ul>

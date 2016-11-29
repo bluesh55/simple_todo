@@ -10,4 +10,9 @@ class TodosController < ApplicationController
     Core::CreateTodo.create(params[:content])
     redirect_to todos_path
   end
+
+  def destroy
+    Core::DestroyTodo.destroy(params[:id].to_i)
+    redirect_to todos_path
+  end
 end
