@@ -1,5 +1,5 @@
 module ActiveRecordRepository
-  class BaseGateway
+  class BaseAdapter
     def initialize(ar_class)
       @ar_class = ar_class
     end

@@ -1,7 +1,7 @@
 module ActiveRecordRepository
-  class TodoGateway < BaseGateway
+  class TodoAdapter < BaseAdapter
     def initialize
-      super(ActiveRecordRepo::Todo)
+      super(Todo)
     end
 
     def create(content)
