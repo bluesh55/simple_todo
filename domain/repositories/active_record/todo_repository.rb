@@ -1,7 +1,8 @@
-module ActiveRecordRepository
-  class TodoAdapter < BaseAdapter
+module ActiveRecord
+  class TodoRepository
     def initialize
-      super(Todo, Core::Entity::Todo)
+      @ar_class = Todo
+      @entity_class = ::Core::Entity::Todo
     end
 
     def find_all
